@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="../static/css/sytle.css">
+        <h2>Welcome To Login Page</h2>
+    </head>
+    <body>
+        <body style="background:url(ship1.jpeg); background-size: cover; background-repeat: no-repeat;"></body>
+
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                </div><div class="social-icons">
+                    <img src="fb.png">
+                    <img src="tw.png">
+                    <img src="gp.png">
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Name or Email" required>
+                    <input type="text" class="input-field" placeholder="Enter Password"required>
+                    <input type="checkbox" class="check-box"><span>Remeber password</span>
+                    
+                    <a href="resume.html " target="_blank">login</a><br>
+
+
+                </form>
+            </div>
+        </div>
+        <script>
+            var x= document.getElementById("login");
+            var y=document.getElementById("register");
+            var z= document.getElementById("btn");
+
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+        </script>
+
+    </body>
+</html>
